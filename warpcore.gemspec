@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Components for a modern scalable api server infrastructure with Ruby.}
   spec.description   = %q{A set of components and classes for quickly building cloud applications and infrastructure.}
-  spec.homepage      = "http://www.modernistik.com"
+  spec.homepage      = "https://github.com/modernistik/warpcore"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -26,6 +26,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+  spec.required_ruby_version = '>= 2.2.2'
 
   spec.add_runtime_dependency "activesupport",  ['>= 4.2.1', '< 6']
   spec.add_runtime_dependency "parse-stack", '~> 1'

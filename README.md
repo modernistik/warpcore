@@ -2,6 +2,10 @@
 
 WarpCore is a set of components and classes commonly used for quickly building scalable cloud applications with Parse-Server and Ruby. It bundles several technologies such as: Puma, Parse-Stack, MongoDB, Redis and Sidekiq.
 
+### Code Status
+[![Gem Version](https://badge.fury.io/rb/warpcore.svg)](https://badge.fury.io/rb/warpcore)
+[![Build Status](https://travis-ci.org/modernistik/warpcore.svg?branch=master)](https://travis-ci.org/modernistik/warpcore)
+
 ## Installation
 
 Add this line to your application's Gemfile:
