@@ -1,6 +1,6 @@
 # WarpCore
 
-WarpCore is a set of components and classes commonly used for quickly building scalable cloud applications with [Parse-Server](https://github.com/adelevie/parse-ruby-client) and Ruby. It bundles several technologies such as: Puma, [Parse-Server REST Client](https://github.com/modernistik/parse-stack), MongoDB, [Redis](https://github.com/redis/redis-rb) and [Sidekiq](https://github.com/mperham/sidekiq).
+WarpCore is a set of components and classes commonly used for quickly building scalable cloud applications with [Parse-Server](https://github.com/adelevie/parse-ruby-client) and Ruby. It bundles several technologies such as: [Puma](http://puma.io/), [Parse-Server REST Client](https://github.com/modernistik/parse-stack), [MongoDB](https://www.mongodb.com/), [Redis](http://redis.io/) and [Sidekiq](https://github.com/mperham/sidekiq).
 
 ### Code Status
 [![Gem Version](https://badge.fury.io/rb/warpcore.svg)](https://badge.fury.io/rb/warpcore)
