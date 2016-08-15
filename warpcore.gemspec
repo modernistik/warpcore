@@ -37,7 +37,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "dotenv", "~> 2"
   spec.add_runtime_dependency "thor", "~> 0"
   spec.add_runtime_dependency "rake", "~> 11"
-  spec.add_runtime_dependency "rack", "~> 2"
   spec.add_runtime_dependency "puma", '~> 3'
   spec.add_runtime_dependency "foreman", '~> 0'
 
