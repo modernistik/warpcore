@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    warpcore (0.1.4)
+    warpcore (0.1.5)
       activesupport (>= 4.2.1, < 6)
       dotenv (~> 2)
       foreman (~> 0)
