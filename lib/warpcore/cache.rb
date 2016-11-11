@@ -3,7 +3,7 @@ require 'active_support'
 require 'active_support/core_ext'
 
 module WarpCore
-  # cache helper
+
   def self.cache(key,opts = {})
     if block_given?
       WarpCore::Cache.get( key, opts, Proc.new )
@@ -12,6 +12,8 @@ module WarpCore
     end
   end
 
+  # A class helper to manage a Moneta cache store that can be used throughout the
+  # system.
   class Cache
     class << self
       attr_accessor :store
