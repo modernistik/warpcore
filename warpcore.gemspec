@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Anthony Persaud"]
   spec.email         = ["persaud@modernistik.com"]
 
-  spec.summary       = %q{Components for a modern scalable api server infrastructure with Ruby.}
+  spec.summary       = %q{Components for a modern scalable API server infrastructure with Ruby.}
   spec.description   = %q{A set of components and classes for quickly building cloud applications and infrastructure.}
   spec.homepage      = "https://github.com/modernistik/warpcore"
   spec.license       = "MIT"
@@ -30,6 +30,8 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "activesupport",  ['>= 4.2.1', '< 6']
   spec.add_runtime_dependency "parse-stack", '~> 1'
+  spec.add_runtime_dependency "parse-stack-async", '< 2'
+  spec.add_runtime_dependency "parse-server-sdk", '~> 2'
   spec.add_runtime_dependency "redis", ['> 2', '< 4']
   spec.add_runtime_dependency "sucker_punch", '~> 2'
   spec.add_runtime_dependency "sidekiq", '~> 4'
@@ -40,6 +42,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "puma", '~> 3'
   spec.add_runtime_dependency "foreman", '~> 0'
 
-  spec.add_development_dependency "bundler", "~> 1.12"
 
 end

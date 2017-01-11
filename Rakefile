@@ -10,3 +10,18 @@ Rake::TestTask.new do |t|
 end
 
 task :default => :test
+
+task :console do
+  exec './bin/console'
+end
+task :c => :console
+
+desc 'List undocumented methods'
+task 'yard:stats' do
+  exec 'yard stats --list-undoc'
+end
+
+desc 'Start the yard server'
+task 'yard' do
+  exec 'rm -rf ./yard && yard server --reload'
+end

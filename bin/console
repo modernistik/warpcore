@@ -1,14 +1,27 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
+require 'dotenv'
+require 'byebug'
 require "warpcore"
+Dotenv.load
 
+Parse.setup # cache: 'redis://localhost:6379'
+
+puts "[ParseServerURL] #{Parse.client.server_url}"
+puts "[ParseAppID]     #{Parse.client.app_id}"
+
+Parse.auto_generate_models!.each do |model|
+  puts "Generated #{model}"
+end
 # You can add fixtures and/or initialization code here to make experimenting
 # with your gem easier. You can also use a different console, if you like.
 
 # (If you use this, don't forget to add pry to your Gemfile!)
-# require "pry"
-# Pry.start
+require "pry"
+Pry.start
 
-require "irb"
-IRB.start
+#
+# require "irb"
+# IRB.start
+#Rack::Server.start :app => HelloWorldApp
