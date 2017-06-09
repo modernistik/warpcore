@@ -29,16 +29,17 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.3'
 
   spec.add_runtime_dependency "activesupport", '~> 5'
-  spec.add_runtime_dependency "parse-stack", '~> 1'
+  spec.add_runtime_dependency "parse-stack", ['> 1.6', '< 2']
   spec.add_runtime_dependency "parse-stack-async", '< 2'
   spec.add_runtime_dependency "parse-server-sdk", '~> 2'
   spec.add_runtime_dependency "redis", ['> 3', '< 4']
   spec.add_runtime_dependency "sucker_punch", '~> 2'
-  spec.add_runtime_dependency "sidekiq", '~> 4'
-  spec.add_runtime_dependency "moneta", '~> 0'
+  spec.add_runtime_dependency "sidekiq", '~> 5'
+  spec.add_runtime_dependency "moneta", '~> 1'
   spec.add_runtime_dependency "dotenv", "~> 2"
   spec.add_runtime_dependency "thor", "~> 0"
   spec.add_runtime_dependency "rake", "~> 12"
+  spec.add_runtime_dependency "rack", ["> 2", "< 3"]
   spec.add_runtime_dependency "puma", '~> 3'
   spec.add_runtime_dependency "foreman", '~> 0'
 

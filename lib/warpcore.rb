@@ -1,4 +1,4 @@
-
+exit if ENV['MERCURY_URL'] # don't use master branch
 # Load all component sets.
 require 'active_support'
 require 'active_support/core_ext'

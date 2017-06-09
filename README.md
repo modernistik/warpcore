@@ -5,6 +5,7 @@ WarpCore is a set of components and classes commonly used for quickly building s
 ### Code Status
 [![Gem Version](https://badge.fury.io/rb/warpcore.svg)](https://badge.fury.io/rb/warpcore)
 [![Build Status](https://travis-ci.org/modernistik/warpcore.svg?branch=master)](https://travis-ci.org/modernistik/warpcore)
+[![API Reference](http://img.shields.io/badge/api-docs-blue.svg)](https://www.modernistik.com/gems/warpcore/)
 
 ## Installation
 
